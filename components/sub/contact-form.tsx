@@ -112,7 +112,7 @@ export const ContactForm = () => {
       {/* Status Messages */}
       {submitStatus === "success" && (
         <div className="text-green-400 text-center font-medium">
-          Message sent successfully! I'll get back to you soon.
+          Message sent successfully! I&apos;ll get back to you soon.
         </div>
       )}
       {submitStatus === "error" && (

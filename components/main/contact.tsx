@@ -16,8 +16,8 @@ export const Contact = () => {
           Contact Me
         </h1>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-          Have a question or want to work together? I'd love to hear from you. 
-          Send me a message and I'll respond as soon as possible.
+          Have a question or want to work together? I&apos;d love to hear from you. 
+          Send me a message and I&apos;ll respond as soon as possible.
         </p>
       </div>
 

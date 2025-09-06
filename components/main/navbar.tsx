@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="flex items-center justify-between h-[70px] px-5 md:px-10">
         {/* Logo & Name */}
         <Link 
-          href="#about-me" 
+          href="/" 
           className="flex items-center gap-2" 
           onClick={closeMenu}
         >

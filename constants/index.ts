@@ -97,7 +97,7 @@ export const SOCIALS = [
   {
     name: "Twitter",
     icon: RxTwitterLogo,
-    link: "https://twitter.com/pranav8316",
+    link: "https://twitter.com/pranav_g8316",
   },
 ] as const;
 
@@ -166,32 +166,32 @@ export const BACKEND_SKILL = [
 
 ] as const;
 
-export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-] as const;
+// export const FULLSTACK_SKILL = [
+//   {
+//     skill_name: "React",
+//     image: "react.png",
+//     width: 80,
+//     height: 80,
+//   },
+//   {
+//     skill_name: "Next.js 14",
+//     image: "next.png",
+//     width: 80,
+//     height: 80,
+//   },
+//   {
+//     skill_name: "Node.js",
+//     image: "node.png",
+//     width: 80,
+//     height: 80,
+//   },
+//   {
+//     skill_name: "MongoDB",
+//     image: "mongodb.png",
+//     width: 40,
+//     height: 40,
+//   },
+// ] as const;
 
 export const OTHER_SKILL = [
   {
@@ -316,7 +316,11 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "Home",
+    link: "/",
+  },
+  {
+    title: "About Me",
     link: "#about-me",
   },
   {

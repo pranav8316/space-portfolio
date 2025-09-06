@@ -1,0 +1,9 @@
+<!-- This is a placeholder for your profile photo -->
+<!-- Please add your actual photo as 'profile-photo.jpg' in the public folder -->
+<!-- The image should be square (e.g., 400x400px) for best results -->
+
+To add your photo:
+1. Take or select a professional photo of yourself
+2. Resize it to be square (400x400px recommended)
+3. Save it as 'profile-photo.jpg' in the public folder
+4. Replace this placeholder file

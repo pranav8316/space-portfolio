@@ -48,10 +48,10 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto space-y-6">
+    <form onSubmit={handleSubmit} className="w-full space-y-4">
       {/* Name Field */}
       <div className="relative">
-        <label htmlFor="name" className="block text-white font-medium mb-2">
+        <label htmlFor="name" className="block text-white font-medium mb-1.5">
           Your Name
         </label>
         <input
@@ -61,14 +61,14 @@ export const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+          className="w-full px-3 py-2.5 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors text-sm"
           placeholder="Enter your name"
         />
       </div>
 
       {/* Email Field */}
       <div className="relative">
-        <label htmlFor="email" className="block text-white font-medium mb-2">
+        <label htmlFor="email" className="block text-white font-medium mb-1.5">
           Your Email
         </label>
         <input
@@ -78,14 +78,14 @@ export const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+          className="w-full px-3 py-2.5 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors text-sm"
           placeholder="Enter your email"
         />
       </div>
 
       {/* Message Field */}
       <div className="relative">
-        <label htmlFor="message" className="block text-white font-medium mb-2">
+        <label htmlFor="message" className="block text-white font-medium mb-1.5">
           Your Message
         </label>
         <textarea
@@ -94,8 +94,8 @@ export const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           required
-          rows={5}
-          className="w-full px-4 py-3 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"
+          rows={4}
+          className="w-full px-3 py-2.5 bg-transparent border border-[#2A0E61] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none text-sm"
           placeholder="Enter your message"
         />
       </div>
@@ -104,19 +104,19 @@ export const ContactForm = () => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-3 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-transparent transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full py-2.5 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-transparent transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
       >
         {isSubmitting ? "Sending..." : "Send Message"}
       </button>
 
       {/* Status Messages */}
       {submitStatus === "success" && (
-        <div className="text-green-400 text-center font-medium">
+        <div className="text-green-400 text-center font-medium text-sm">
           Message sent successfully! I&apos;ll get back to you soon.
         </div>
       )}
       {submitStatus === "error" && (
-        <div className="text-red-400 text-center font-medium">
+        <div className="text-red-400 text-center font-medium text-sm">
           Failed to send message. Please try again.
         </div>
       )}

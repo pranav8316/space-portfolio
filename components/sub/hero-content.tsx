@@ -4,7 +4,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/lib/motion";
-import { RxDownload, RxEyeOpen } from "react-icons/rx";
+import { RxDownload, RxEyeOpen, RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export const HeroContent = () => {
   return (
@@ -52,7 +52,7 @@ export const HeroContent = () => {
         {/* Action Buttons */}
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-col sm:flex-row gap-4 mt-6 mx-auto md:mx-0 max-w-fit"
+          className="flex flex-col sm:flex-row gap-2 mt-0 mx-auto md:mx-0 max-w-fit"
         >
           {/* Download Resume Button */}
           <a
@@ -60,8 +60,8 @@ export const HeroContent = () => {
             download="Pranav_Gupta_Resume.pdf"
             className="group py-3 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-purple-500/25 flex items-center justify-center gap-2 min-w-[180px]"
           >
+            Resume
             <RxDownload className="w-4 h-4 group-hover:animate-bounce" />
-            Download Resume
           </a>
 
           {/* View Projects Button */}
@@ -71,6 +71,34 @@ export const HeroContent = () => {
           >
             <RxEyeOpen className="w-4 h-4" />
             View Projects
+          </a>
+        </motion.div>
+
+        {/* Social Media Icons */}
+        <motion.div
+          variants={slideInFromLeft(1.2)}
+          className="flex gap-2 mt-2 mx-auto md:mx-0 justify-center md:justify-start pt-0"
+        >
+          {/* GitHub Icon */}
+          <a
+            href="https://github.com/pranav8316"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="group p-3 bg-transparent border border-gray-600 text-gray-400 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:border-purple-500 hover:text-purple-400 hover:shadow-purple-500/25"
+            title="GitHub Profile"
+          >
+            <RxGithubLogo className="w-5 h-5 group-hover:animate-pulse" />
+          </a>
+
+          {/* LinkedIn Icon */}
+          <a
+            href="https://www.linkedin.com/in/pranav8316/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="group p-3 bg-transparent border border-gray-600 text-gray-400 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:border-cyan-500 hover:text-cyan-400 hover:shadow-cyan-500/25"
+            title="LinkedIn Profile"
+          >
+            <RxLinkedinLogo className="w-5 h-5 group-hover:animate-pulse" />
           </a>
         </motion.div>
       </div>
